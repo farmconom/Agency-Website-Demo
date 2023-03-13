@@ -1,0 +1,136 @@
+.portfolio-top::before {
+    background: url(/images/blog-hero.jpg) no-repeat center / cover; 
+  }
+
+.blog-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: auto;
+  margin: 4rem;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+}
+/* post page*/
+/* ================================================================================================== */
+.blog-post{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: 70%;
+}
+
+.blog-post figure {
+  width: 95%;
+  margin-bottom: 4rem;
+}
+.blog-post figure h4{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+}
+.blog-post figure h4:hover{
+  color: #4ce071;
+ }
+
+.blog-post figure > img {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* profile */
+.blog-profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  
+}
+.blog-profile i > img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.blog-profile p {
+  margin: 0 2rem 0 .5rem;
+}
+.blog-profile i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #acacac;
+  cursor: pointer;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+}
+.blog-profile i:hover, .blog-profile i:hover p {
+  color: #4ce071;
+}
+
+/* read more */
+.readmore {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+.readmore p {
+  font-weight: 900;
+  cursor: pointer;
+}
+.readmore span {
+  width: 2rem;
+  border: 1px solid #acacac;
+  margin-left: .5rem;
+}
+.readmore p:hover {
+  color: #4ce071;
+}
+.readmore p:hover + span {
+  border: 1px solid #4ce071;
+}
+
+/* ========================================================================= */
+/* media query */
+@media (max-width:959px) {
+  .blog-content {
+    flex-direction: column;
+  }
+
+  .blog-post{
+    width: 100%;
+  }
+}
+
+@media (max-width:529px) {
+  .blog-post figure {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 1rem;
+  }
+  .blog-profile{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .blog-profile i {
+    margin: .5rem 0;
+  }
+}

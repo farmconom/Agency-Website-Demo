@@ -1,0 +1,41 @@
+.portfolio-top::before {
+    background: url(/images/portfolio-5.jpg) no-repeat center / cover;
+  }
+
+  .ui-main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ui-main section {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+  }
+
+  .ui-head-text {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .ui-main article {
+    margin-top: 3rem;
+  }
+
+/* ========================================================================= */
+/* media query */
+@media (max-width:363px) {
+  .portfolio-top h1{
+    font-size: 3.8rem;
+  }
+}
+

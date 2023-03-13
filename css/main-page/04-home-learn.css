@@ -1,0 +1,76 @@
+.learn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: #fff;
+}
+.learn::before {
+    z-index: -1;
+    content: "";
+    background: url(/images/map.png) no-repeat top / cover; 
+    background-color: #071021;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.learn h3 {
+    margin-top: 8rem;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+}
+.learn p {
+    color: #fff;
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+.learn button {
+    font-family: tommy-light;
+    cursor: pointer;
+    width: 15rem;
+    height: 4rem;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    background-color:  #267df4;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+  }
+  .learn button:hover {
+    background-color: #444;
+  }
+
+  /* run numbers */
+.learn article {
+    margin-top: 14rem;
+    width: 80%;
+    padding-bottom: 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.learn article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: tommy-light;
+}
+.learn article p {
+    color: #267df4;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.learn article span {
+    font-size: 3rem;
+    margin: 1rem 0;
+
+}

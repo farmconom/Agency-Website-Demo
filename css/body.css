@@ -1,0 +1,70 @@
+@font-face {
+	font-family: tommy;
+	src: url(../fonts/MADETommySoft.woff);
+ }
+@font-face {
+	font-family: tommy-light;
+	src: url(../fonts/MADETommySoft-Light.woff);
+ }
+
+html,
+body{
+  font-size: calc(60% + 0.8vmin);  
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+body {
+	color: #1e1e1e;
+	background-color: #fff;
+    font-family:tommy, monospace;
+	
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+}
+
+/* scroll up button */
+.top {
+	float: right;
+	position: sticky;
+	bottom: 20px;     
+	margin-right:20px; 
+	place-self: end;
+	margin-top: -2rem;
+	cursor: pointer;
+	opacity: .7;
+	
+	/* visual styling */
+	text-decoration: none;
+	padding: 3px 6px;
+	color: #666;
+	font-size: 1.5rem;
+	background: #fff;
+	border: 2px solid #666;
+	border-radius: 10%;
+	white-space: nowrap;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+  }
+  .hide-arrow {
+	display: none;
+  }
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	
+}
+  
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+	background-color: #727272;
+
+}

@@ -1,0 +1,158 @@
+header {
+    width: 100%;
+    height: 4rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: flex;
+
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.logo { /* LOGO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.logo span {
+    font-size: 1.2rem;
+
+}
+.logo span:nth-child(1) {
+    font-weight: 900;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.links {
+    font-size: 20px;
+    height: 70%;
+    border-left: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    color: #000;
+    text-decoration: none;
+    margin: 1rem 1rem;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+}
+
+.links a:hover {
+    border-bottom: 3px solid #51ff00;
+}
+
+#hamburger {
+    display: none;
+}
+
+.fa-bars {
+    opacity: 1;
+}
+.fa-xmark {
+    position: absolute;
+    top: -.4rem;
+    right: .3rem;
+    opacity: 0;
+}
+
+/* ========================================================================= */
+/* media query */
+@media (max-width:678px) {
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .hamburgerMenu label {
+        display: inline-block;
+        
+    }
+    .hamburgerMenu i {
+        cursor: pointer;
+        font-size: 2rem;
+        margin: 1rem;
+        padding-left: .2rem;
+    }
+
+    .hamburgerMenu i:hover{
+        transition: all .2s;
+        -webkit-transition: all .2s;
+        transform: scale(1.1);
+    }
+
+    .navbar #hamburger:checked~.hamburgerMenu>label {
+        background-color: #a8a8a8;
+
+    }
+    .navbar #hamburger:checked ~ .hamburgerMenu>label .fa-bars{
+        opacity: 0;
+    }
+    .navbar #hamburger:checked ~ .hamburgerMenu>label .fa-xmark{
+        opacity: 1;
+    }
+
+
+
+    .hamburgerMenu label i {
+        display: block;
+    }
+
+    .links {
+        background: #d4d4d4;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        width: 12rem;
+        top: 45px;
+        right: 0px;
+
+        box-shadow: -12px 0px 0px -6px rgba(71,71,71,1);
+        -webkit-box-shadow: -12px 0px 0px -6px rgba(71,71,71,1);
+        -moz-box-shadow: -12px 0px 0px -6px rgba(71,71,71,1);
+    }
+
+    .links a {
+        text-align: left;
+        display: block;
+        margin: 0;
+        margin: 2rem;
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid #b6b6b6;
+    }
+    .links a:hover {
+        border-bottom: 3px solid #51ff00;
+    }
+
+    #hamburger:not(:checked)~.links {
+        height: 0px;
+    }
+
+    #hamburger:checked~.links {
+        height: calc(100vh - 45px);
+    }
+}

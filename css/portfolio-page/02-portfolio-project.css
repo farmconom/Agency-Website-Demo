@@ -1,0 +1,77 @@
+.portfolio-top::before {
+  background: url(/images/portfolio-11.jpg) no-repeat center / cover; 
+}
+
+.portfolio-project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+    margin: 4rem;
+  }
+
+  /* img */
+  .portfolio-project figure{
+    width: 60%;
+  }
+    .portfolio-project figure img{
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+  /* DESCRIPTION */
+  .portfolio-project article{
+    width: 40%;
+    margin: 0rem 2rem 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .portfolio-project h4 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  .portfolio-project p:nth-child(2) {
+    margin: 2rem 0;
+  }
+
+  /* btn */
+  .portfolio-project button {
+    font-family: tommy-light;
+    cursor: pointer;
+    margin: 4rem 0 2rem 0;
+    width: 8rem;
+    height: 3rem;
+    color: #000;
+    border-radius: 30px;
+    border: 0;
+    font-size: 1.2rem;
+    background-color:  #dfdfdf;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+  }
+  .portfolio-project button:hover {
+    color: #fff;
+    background-color: #51ff00;
+  }
+
+/* media query */
+/* ================================================ */
+@media (max-width: 979px) {
+  .portfolio-project {
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+
+    /* img */
+    .portfolio-project figure{
+      width: 100%;
+    }
+    
+    /* DESCRIPTION */
+    .portfolio-project article{
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }

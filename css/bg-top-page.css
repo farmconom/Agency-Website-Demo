@@ -1,0 +1,41 @@
+.portfolio-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.portfolio-top::before {
+  z-index: -1;
+  content: "";
+  filter: brightness(60%);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.portfolio-top h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.Portfolio-line {
+  width: 10rem;
+  height: .3rem;
+  border-top: 5px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* white color header */
+.links a, .nav-title, .hamburgerMenu {
+  color: #fff;
+}
+
+/* ========================================================================= */
+
+

@@ -1,0 +1,63 @@
+/* Check */
+/* ----------------------------------------------- */
+.ui-check > section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ui-check article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+/* Choose a pet */
+.ui-check label {
+    margin-bottom: .8rem;
+}
+.ui-check select {
+    padding: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* select & radio */
+.ui-check fieldset {
+    border: 1px solid #c0c0c0;
+    width: 90%;
+    padding: 1rem;
+}
+.ui-check legend {
+    padding: 0 .5rem;
+}
+
+.ui-check fieldset input {
+    margin-bottom: 1.5rem;
+}
+
+.ui-check input[type='checkbox'], .ui-check input[type='radio'] {
+    filter: hue-rotate(280deg);
+  }
+
+/* ========================================================================= */
+/* media query */
+
+/* check */
+@media (max-width:585px) {
+    .ui-check > section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ui-check article {
+        margin: 2rem 0;
+    }
+    .ui-check article:nth-child(3) {
+        margin-bottom: 0;
+    }
+}

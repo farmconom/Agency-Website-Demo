@@ -1,0 +1,68 @@
+.latest-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+}
+.latest-work h3 {
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+.latest-work > p {
+    font-style: italic;
+}
+
+/* grid */
+.latest-work article {
+    margin-top: 4rem;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+.latest-work article figure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+}
+.latest-work article img {
+   width: 100%;
+}
+
+/* text */
+.latest-work article span, .latest-work article i {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.latest-work article i {
+    bottom: 0;
+    right: 0;
+    margin: .5rem;
+    cursor: pointer;
+
+}
+
+/* hover */
+.latest-work article figure:hover img {
+    opacity: .3;
+}
+.latest-work article figure:hover span, .latest-work article figure:hover i {
+    opacity: 1;
+}

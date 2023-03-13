@@ -1,0 +1,24 @@
+section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: tommy-light;
+  font-size: 1.1rem;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+.line-p {
+  height: 0;
+  width: 3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #2c8fff;
+}

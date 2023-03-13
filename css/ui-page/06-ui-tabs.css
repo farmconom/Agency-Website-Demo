@@ -1,0 +1,135 @@
+
+.ui-tabs article {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+/* tabs */
+/* ----------------------------------------------- */
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  }
+  .tabs label {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    color: #000;
+    font-weight: bold;
+    transition: background ease 0.3s;
+  }
+  .tabs .tab {
+    order: 9;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 1rem;
+    background: #555;
+    padding: 20px;
+  }
+  .tab p {
+    color: #fff;
+  }
+  .tabs input[type="radio"] {
+    display: none;
+  }
+  .tabs input[type="radio"]:checked + label {
+    background: #555;
+    color: #fff;
+  }
+  .tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+  }
+
+/* Accordion */
+/* ------------------------------------------------- */
+.accordion-wrapper input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.accordion-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+  margin:0 auto;
+}
+.accordion {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.accordion:last-child{
+  margin-bottom: 0;
+}
+.accordion-label {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  background: rgba(4,57,94,.8);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+.accordion-label:hover {
+  background: rgba(4,57,94,1);
+}
+.accordion-label::after {
+  content: "\276F";
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion-content {
+  max-height: 0;
+  padding: 0 16px;
+  color: rgba(4,57,94,1);
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion-content p{
+  margin: 0;
+  color: rgba(4,57,94,.7);
+  font-size: 18px;
+}
+.accordion-wrapper input:checked + .accordion-label {
+  background: rgba(4,57,94,1);
+}
+.accordion-wrapper input:checked + .accordion-label::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.accordion-wrapper input:checked ~ .accordion-content {
+  max-height: 100vh;
+  padding: 16px;
+}
+  
+  /* ========================================================================= */
+  /* media query */
+  
+  /* tab */
+  @media (max-width: 465px) {
+    .tabs .tab, .tabs label {
+      order: initial;
+   }
+    .tabs label {
+      width: 100%;
+      margin-left: 60%;
+      margin-right: -.5px;
+   }
+  }

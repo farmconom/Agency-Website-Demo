@@ -1,0 +1,127 @@
+.portfolio-top::before {
+    background: url(/images/contact-hero.jpg) no-repeat center / cover;
+  }
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+.contact-main h4 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* SEND A MESSAGE */
+.contact-main article:nth-child(1){
+  width: 55%;
+}
+
+.contact-main form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main form object {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-main form object div {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.contact-main input {
+  height: 2rem;
+  border-radius: 30px;
+  border: 1px solid #999;
+  margin: .5rem 0;
+  padding: 0 .5rem;
+}
+.contact-main textarea {
+  height: 8rem;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #999;
+  margin: .5rem 0;
+  padding: .5rem;
+}
+
+#btn-send {
+  
+  width: 8rem;
+  background-color: #3cff00;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+#btn-send:hover {
+  color: #fff;
+  background-color: #525252;
+}
+
+
+/* information */
+.contact-main article:nth-child(2){
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  border-left: 1px solid #ddd;
+}
+
+.contact-main article:nth-child(2) h6 {
+  margin-bottom: .5rem;
+}
+
+.contact-main article:nth-child(2) p {
+  margin-bottom: 3rem;
+}
+
+/* map */
+.contact-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 3rem;
+}
+
+.contact-map iframe{
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ========================================================================= */
+/* media query */
+@media (max-width:781px) {
+  .contact-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* SEND A MESSAGE */
+  .contact-main article:nth-child(1){
+    width: 90%;
+  }
+
+  /* information */
+  .contact-main article:nth-child(2){
+    width: 90%;
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid #ddd;
+    padding-top: 3rem;
+  }
+}

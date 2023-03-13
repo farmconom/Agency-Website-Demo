@@ -1,0 +1,31 @@
+/* Form */
+/* ----------------------------------------------- */
+.ui-form form {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+.ui-form input {
+    height: 2rem;
+    border-radius: 30px;
+    border: 1px solid #999;
+    margin: .5rem 0;
+    padding: 0 .5rem;
+  }
+
+#btn-sign {
+  width: 8rem;
+  background-color: #3cff00;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+#btn-sign:hover {
+  color: #fff;
+  background-color: #525252;
+}

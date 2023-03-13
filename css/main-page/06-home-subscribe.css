@@ -1,0 +1,67 @@
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.subscribe h3 {
+    text-align: center;
+}
+
+.subscribe form {
+    margin: 2rem 1rem;
+    max-width: 480px;
+    width: 90%;
+    height: 3rem;
+    position: relative;
+}
+
+.subscribe input {
+    z-index: -1;
+    height: 100%;
+    width: 95%;
+    border: 1px solid #757575;
+    border-radius: 30px;
+    padding-left: 12px;
+    font-size: 1.1rem;
+}
+
+.subscribe button {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    height: 2.7rem;
+    border: 0;
+    border-radius: 30px;
+    background-color: #6fc754;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.subscribe button:hover {
+    background-color: #808080;
+}
+
+/* ========================================================================= */
+/* media query */
+@media (max-width:462px) {
+    .subscribe button {
+        right: 10px;
+    }
+  }
+  @media (max-width:375px) {
+    .subscribe button {
+        right: 6px;
+    }
+  }
+  @media (max-width:300px) {
+    .subscribe button {
+        right: 2px;
+    }
+  }

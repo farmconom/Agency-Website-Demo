@@ -1,0 +1,59 @@
+/* Your story begins from here's page */
+/* =============================================== */
+.home-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-top::before {
+  z-index: -1;
+  content: "";
+  background: url(/images/hero.jpg) no-repeat center / cover; 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .5;
+}
+.home-top h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 1rem;
+  margin-bottom: 1rem;
+}
+.home-top h5 {
+  text-align: center;
+  font-family: tommy-light;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+.home-top button {
+  font-family: tommy-light;
+  cursor: pointer;
+  width: 15rem;
+  height: 4rem;
+  color: #444;
+  border: 1px solid #444;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  background-color:  transparent;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+}
+.home-top button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* ========================================================================= */
+/* media query */
+@media (max-width:572px) {
+  .home-top h1 {
+    font-size: 3.5rem;
+  }
+}
+
