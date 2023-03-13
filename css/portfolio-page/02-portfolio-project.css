@@ -1,5 +1,5 @@
 .portfolio-top::before {
-  background: url(/images/portfolio-11.jpg) no-repeat center / cover; 
+  background: url(./images/portfolio-11.jpg) no-repeat center / cover; 
 }
 
 .portfolio-project {

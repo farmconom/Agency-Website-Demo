@@ -10,7 +10,7 @@
 .learn::before {
     z-index: -1;
     content: "";
-    background: url(/map.png) no-repeat top / cover; 
+    background: url(./map.png) no-repeat top / cover; 
     background-color: #071021;
 
     position: absolute;
