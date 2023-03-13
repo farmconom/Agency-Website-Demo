@@ -10,7 +10,7 @@
 .home-top::before {
   z-index: -1;
   content: "";
-  background: url(hero.jpg) no-repeat center / cover; 
+  background: url(/hero.jpg) no-repeat center / cover; 
   position: absolute;
   top: 0px;
   right: 0px;
