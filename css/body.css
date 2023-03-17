@@ -22,42 +22,6 @@ body {
 	transition: opacity 0.3s;
 	-webkit-transition: opacity 0.3s;
 }
-/* Preloading images */
-body::after {
-	content: url(../../images/anchor.svg)
-			 url(../../images/apple-touch-icon.png)
-			 url(../../images/author-2.jpg)
-			 url(../../images/author-3.jpg)
-			 url(../../images/author-4.jpg)
-			 url(../../images/author.jpg)
-			 url(../../images/basket.svg)
-			 url(../../images/blog-hero.jpg)
-			 url(../../images/bycicle.svg)
-			 url(../../images/chemestry.svg)
-			 url(../../images/contact-hero.jpg)
-			 url(../../images/favicon.png)
-			 url(../../images/hero.jpg)
-			 url(../../images/ipad-pro.png)
-			 url(../../images/map.png)
-			 url(../../images/microphone.svg)
-			 url(../../images/paper-plane.svg)
-			 url(../../images/photo.svg)
-			 url(../../images/portfolio-1.jpg)
-			 url(../../images/portfolio-10.jpg)
-			 url(../../images/portfolio-11.jpg)
-			 url(../../images/portfolio-12.jpg)
-			 url(../../images/portfolio-2.jpg)
-			 url(../../images/portfolio-3.jpg)
-			 url(../../images/portfolio-4.jpg)
-			 url(../../images/portfolio-5.jpg)
-			 url(../../images/portfolio-6.jpg)
-			 url(../../images/portfolio-7.jpg)
-			 url(../../images/portfolio-8.jpg)
-			 url(../../images/portfolio-9.jpg)
-			 url(../../images/portfolio-hero.jpg)
-			 url(../../images/rocket.svg)
-}
-
 
 /* scroll up button */
 .top {
