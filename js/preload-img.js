@@ -1,0 +1,37 @@
+const images = ['../images/anchor.svg',
+                '../images/apple-touch-icon.png',
+                '../images/author-2.jpg',
+                '../images/author-3.jpg',
+                '../images/author-4.jpg',
+                '../images/author.jpg',
+                '../images/basket.svg',
+                '../images/blog-hero.jpg',
+                '../images/bycicle.svg',
+                '../images/chemestry.svg',
+                '../images/contact-hero.jpg',
+                '../images/favicon.png',
+                '../images/hero.jpg',
+                '../images/ipad-pro.png',
+                '../images/map.png',
+                '../images/microphone.svg',
+                '../images/paper-plane.svg',
+                '../images/photo.svg',
+                '../images/portfolio-1.jpg',
+                '../images/portfolio-10.jpg',
+                '../images/portfolio-11.jpg',
+                '../images/portfolio-12.jpg',
+                '../images/portfolio-2.jpg',
+                '../images/portfolio-3.jpg',
+                '../images/portfolio-4.jpg',
+                '../images/portfolio-5.jpg',
+                '../images/portfolio-6.jpg',
+                '../images/portfolio-7.jpg',
+                '../images/portfolio-8.jpg',
+                '../images/portfolio-9.jpg',
+                '../images/portfolio-hero.jpg',
+                '../images/rocket.svg'];                
+
+images.forEach((image) => {
+  const img = new Image();
+  img.src = image;
+});
